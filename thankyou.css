@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+   
+}
+
+.bgnd {
+    width: 100%;
+    height: 100vh;
+    background: rgb(169, 148, 190);
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .bgnd {
+        padding: 0 2%;
+    }
+}

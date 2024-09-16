@@ -1,0 +1,114 @@
+/* addcart css */
+
+#cartTab {
+    width: 400px;
+    background-color: #333;
+    color: #eee;
+    position: fixed;
+    /* inset: 0 0 0 auto; */
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    scroll-behavior: smooth;
+    font-size: 15px;
+
+}
+
+header a {
+    position: relative;
+    font-size: 2.5rem;
+    color: #333;
+    margin:0px 20px 0px  ;
+}
+
+header a span {
+   
+    display: flex;
+    width: 22px;
+    height: 22px;
+    font-size: 17px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 88px;
+
+}
+
+body.showCart #cartTab {
+    inset: 0 0 0 auto;
+}
+
+
+#cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+#cartTab .butt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#cartTab .butt button {
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+#cartTab .butt .close {
+    background-color: #eee;
+}
+
+#cartTab .ListCart .item img {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+#cartTab .ListCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.ListCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ListCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+.ListCart .item:nth-child(even){
+    background-color: #eee1;
+}
+
+.ListCart {
+    overflow: auto;
+
+}
+
+.ListCart::-webkit-scrollbar {
+    width: 0;
+}
+

@@ -1,0 +1,81 @@
+body {
+    background: url(Images1/pinky.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+
+}
+
+#form {
+    width: 400px;
+    margin: 20vh auto 50vh auto;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 2px solid pink;
+    padding: 30px;
+    color: #fff;
+    
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    
+}
+
+#form button {
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid pink;
+}
+
+.error {
+    color:rgb(255, 106, 0);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.input-group.success input {
+    border-color: green;
+}
+
+.input-group.error input {
+    border-color: red;
+}
+
+form p {
+    text-align: center;
+}
+
+form p a {
+    color: #333;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}

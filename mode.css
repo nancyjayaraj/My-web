@@ -1,0 +1,247 @@
+:root {
+    --pink:#e84393;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: 1s linear; 
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--secondary-color);
+    padding: 1rem;
+    margin: 2rem 0;
+    
+
+}
+
+.heading span {
+    color: var(--pink);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: var(--pink);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 10px 140px 10px 140px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+    margin: 12px;
+     
+}
+
+#brand {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    align-items: center;
+    
+}
+
+#gal {
+
+    color: var(--pink);
+
+}
+
+header .navbar {
+    margin: 10px 80px;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: var(--secondary-color);
+   
+}
+
+header .navbar a:hover {
+    color: var(--pink);
+}
+
+header #icons a {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin:0px 20px 0px  ;
+  
+}
+
+header #icons a:hover {
+    color: var(--pink);
+}
+
+#icons {
+    position: relative;
+}
+
+header #icons span {
+   
+    display: flex;
+    width: 22px;
+    height: 22px;
+    font-size: 17px;
+    background-color: var(--pink);
+    justify-content: center;
+    align-items: center;
+    color:var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 88px;
+
+}
+
+#moon {
+    font-size: 25px;
+    cursor: pointer;
+    
+
+}
+
+
+.trending-product {
+    
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+  
+}
+
+
+.center-text h1{
+    color: var(--secondary-color);
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.center-text span{
+    color: var(--pink);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+    
+}
+
+.pro {
+    position: relative;
+    transition: all .40s;
+}
+
+.pro img {
+    width: 100%;
+    height: 32rem;
+    transition: all .40s;
+}
+
+.pro img:hover {
+    transform: scale(0.9);
+}
+
+.product-text h3 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+
+.heart-icon:hover {
+    color: var(--pink);
+}
+
+.rating i {
+    color: #ff8c00;
+    font-size: 18px;
+}
+
+.price h4 {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+
+.price p {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+
+}
+
+.dark-theme {
+
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+#moon {
+    width: 35px;
+    height: 35px;
+}
